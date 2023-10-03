@@ -1,0 +1,26 @@
+#!/bin/bash
+mkdir -p /opt/Sahai/test
+ls -a /bin | head -10 > /opt/Sahai/test/output.txt
+mkdir -p /opt/Sahai/tmp
+ 
+        for file {b..f}
+        do
+        touch /opt/Sahai/tmp/$file
+        done
+ 
+df -h / > /opt/Sahai/tmp/f
+mv /opt/Sahai/tmp/b /opt/Sahai/
+mv /opt/Sahai/tmp/c /opt/Sahai/
+mv /opt/Sahai/tmp/d /opt/Sahai/
+mv /opt/Sahai/tmp/e /opt/Sahai/
+mv /opt/Sahai/test/output.txt /opt/Sahai/tmp/done.txt
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
